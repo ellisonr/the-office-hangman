@@ -1,10 +1,12 @@
 body{
     background: url(images/wallpaper.jpg);
+    /* ^https://wall.alphacoders.com/big.php?i=420126*/
     background-size: cover;
     margin: 0;
     background-position-y: 150px;
 }
 
+/* banner elements */
 h1, h2{
     color: white;
     text-align: center;
@@ -13,7 +15,7 @@ h1, h2{
 }
 h1{
     margin: 0;
-    font-size: 100px;
+    font-size: 110px;
     letter-spacing: 1.7px;
 }
 h2{
@@ -24,6 +26,23 @@ h2{
     letter-spacing: 1.5px;
 }
 
+/* playing area elements */
+.guesses-left{
+    color: rgb(0,193,239);
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    padding-left: 10px;
+}
+
+.playing-area{
+    height: 320px;
+}
+
+.guessing-area{
+    
+}
+
+/* keyboard elements */
 .letter{
     padding: 5px 5px;
     border: 2px solid black;
