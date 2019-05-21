@@ -1,4 +1,22 @@
 h1{
     background-color: black;
     color: white;
+    text-align: center;
+}
+
+.letter{
+    display: inline-block;
+    padding: 5px 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 90px;
+}
+
+.keyboard-area{
+    text-align: center;
 }
