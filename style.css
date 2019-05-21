@@ -1,7 +1,27 @@
-h1{
-    background-color: black;
+body{
+    background: url(images/wallpaper.jpg);
+    background-size: cover;
+    margin: 0;
+    background-position-y: 150px;
+}
+
+h1, h2{
     color: white;
     text-align: center;
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(0,193,239)
+}
+h1{
+    margin: 0;
+    font-size: 100px;
+    letter-spacing: 1.7px;
+}
+h2{
+    margin: 0 0 20px 0;
+    border-bottom: 10px solid white;
+    padding-bottom: 10px;
+    font-size: 35px;
+    letter-spacing: 1.5px;
 }
 
 .letter{
