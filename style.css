@@ -20,7 +20,7 @@ h1{
 }
 h2{
     margin: 0 0 20px 0;
-    border-bottom: 10px solid white;
+    border-bottom: 15px solid white;
     padding-bottom: 10px;
     font-size: 35px;
     letter-spacing: 1.5px;
@@ -39,7 +39,7 @@ h2{
 }
 
 .guessing-area{
-    
+
 }
 
 /* keyboard elements */
@@ -94,5 +94,5 @@ h2{
 .v-pic{background-image: url(images/v-kellykapoor.jpg)}
 .w-pic{background-image: url(images/w-ryanhoward.jpg)}
 .x-pic{background-image: url(images/x-charlesminer.jpg)}
-.y-pic{background-image: url(images/y-moseschrute.png)}
-.z-pic{background-image: url(images/z-michaelklump.jpg)}
+.y-pic{background-image: url(images/y-robertcalifornia.jpg)}
+.z-pic{background-image: url(images/z-deangelovickers.png)}
