@@ -10,12 +10,13 @@ h1{
     text-transform: uppercase;
     width: 90px;
     height: 90px;
-    margin: 5px;
+    margin: 0 8px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 7px;
     line-height: 90px;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
+    color: rgba(240,240,240,0.75);
 }
 
 .keyboard-area{
@@ -23,6 +24,36 @@ h1{
     display: inline-block;
 }
 
-.p-pic{
-    background-image: url(images/prisonmike.png)
+.first-row, .second-row, .third-row {
+    display: inline-block;
+    text-align: center;
+    margin: 8px;
 }
+
+/* images for each letter below */
+.a-pic{background-image: url(images/a-andybernard.jpg)}
+.b-pic{background-image: url(images/b-creedbratton.jpeg)}
+.c-pic{background-image: url(images/c-angelamartin.jpg)}
+.d-pic{background-image: url(images/d-dwightschrute.jpg)}
+.e-pic{background-image: url(images/e-davidwallace.jpg)}
+.f-pic{background-image: url(images/f-stanleyhudson.jpg)}
+.g-pic{background-image: url(images/g-gabelewis.jpg)}
+.h-pic{background-image: url(images/h-datemike.jpg)}
+.i-pic{background-image: url(images/i-pambeesly.jpg)}
+.j-pic{background-image: url(images/j-jimhalpert.png)}
+.k-pic{background-image: url(images/k-kevinmalone.jpg)}
+.l-pic{background-image: url(images/l-oscarmartinez.jpg)}
+.m-pic{background-image: url(images/m-michaelscott.jpg)}
+.n-pic{background-image: url(images/n-hollyflax.png)}
+.o-pic{background-image: url(images/o-phyllisvance.jpg)}
+.p-pic{background-image: url(images/p-prisonmike.png)}
+.q-pic{background-image: url(images/q-darrylphilbin.jpg)}
+.r-pic{background-image: url(images/r-tobyflenderson.jpg)}
+.s-pic{background-image: url(images/s-erinhannon.png)}
+.t-pic{background-image: url(images/t-meredithpalmer.jpg)}
+.u-pic{background-image: url(images/u-janlevinson.jpg)}
+.v-pic{background-image: url(images/v-kellykapoor.jpg)}
+.w-pic{background-image: url(images/w-ryanhoward.jpg)}
+.x-pic{background-image: url(images/x-charlesminer.jpg)}
+.y-pic{background-image: url(images/y-moseschrute.png)}
+.z-pic{background-image: url(images/z-michaelklump.jpg)}
