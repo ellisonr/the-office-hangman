@@ -5,9 +5,8 @@ h1{
 }
 
 .letter{
-    display: inline-block;
     padding: 5px 5px;
-    border: 1px solid black;
+    border: 2px solid black;
     text-transform: uppercase;
     width: 90px;
     height: 90px;
@@ -15,8 +14,15 @@ h1{
     text-align: center;
     border-radius: 5px;
     line-height: 90px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .keyboard-area{
     text-align: center;
+    display: inline-block;
+}
+
+.p-pic{
+    background-image: url(images/prisonmike.png)
 }
