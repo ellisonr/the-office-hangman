@@ -40,6 +40,8 @@ randomPhrase()
 
 //create a function that will split up the random phrase
 //provided into separate letters
+const separatedPhrase = phraseInPlay.split("");
+console.log(separatedPhrase)
 
 
 //create a function that will display the letters in the
