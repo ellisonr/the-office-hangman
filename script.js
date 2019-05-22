@@ -26,6 +26,7 @@ var phraseKey = [
     "princess unicorn",
     "vance refrigeration"
 ];
+//console.log(phraseKey)
 
 //function for returning a random item from the array above
 function randomPhrase(){
@@ -34,4 +35,17 @@ function randomPhrase(){
     return phraseInPlay;
 }
 randomPhrase()
-console.log(phraseInPlay)
+//console.log(phraseInPlay)
+
+//create a function that will split up the random phrase
+//provided into separate letters
+
+
+//create a function that will display the letters in the
+//playing area, but make them hidden at first
+
+
+//for loop that puts the individual letters of the phrase
+//into an array; then if the clicked letter matches a letter
+//in the array, make that letter appear in the playing area
+
