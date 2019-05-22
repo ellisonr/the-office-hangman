@@ -1,31 +1,7 @@
 //array of random phrases, episode names, quotes from The Office
-var phraseKey = [
-    "conference room, five minutes",
-    "that's what she said",
-    "pretzel day",
-    "i declare bankruptcy",
-    "bears beets battlestar galactica",
-    "did i stutter",
-    "diversity day",
-    "the dundies",
-    "save bandit",
-    "keep it simple stupid",
-    "it is your birthday",
-    "party planning committee",
-    "the finer things club",
-    "flonkerton",
-    "threat level midnight",
-    "goodbye toby",
-    "lanch party",
-    "ryan started the fire",
-    "oaky afterbirth",
-    "scott's tots",
-    "michael scott paper company",
-    "dinkin flicka",
-    "here comes treble",
-    "princess unicorn",
-    "vance refrigeration",
-    "you know i have soft teeth"
+var phraseKey = ["conference room, five minutes","that's what she said","pretzel day","i declare bankruptcy","bears beets battlestar galactica","did i stutter","diversity day",
+    "the dundies","save bandit","keep it simple stupid","it is your birthday","party planning committee","the finer things club","flonkerton","threat level midnight","goodbye toby",
+    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","michael scott paper company","dinkin flicka","here comes treble","princess unicorn","vance refrigeration","you know i have soft teeth"
 ];
 //console.log(phraseKey)
 
@@ -43,31 +19,31 @@ randomPhrase()
 const separatedPhrase = phraseInPlay.split("");
 // console.log(separatedPhrase)
 
-
-//create a function that will display the letters in the
-//playing area, but make them hidden at first
-
 //----------------
 //create for loop that creates a space in the "playing area" for each letter in the separatedPhrase
 for (var i=0; i<separatedPhrase.length; i++){
     let placeholderForLetter = document.createElement("div");
     placeholderForLetter.className = "spaceForLetter";
     document.querySelector(".blank-tiles").appendChild(placeholderForLetter);
-    placeholderForLetter.style.backgroundColor = "rgb(0,193,239)"; //applying color to test its covered area
-// ^for every character in the random phrase, create a div element. this div element
-// will have a className of "spaceForletter". target the div with class "blank-tiles"
-// and append that with the div that was just created
+    placeholderForLetter.style.backgroundColor = "rgb(0,193,239)"; 
+    //^applying color to test its covered area
+//^for every character in the random phrase, create a div element. this div element
+//will have a className of "spaceForletter". target the div with class "blank-tiles"
+//and append that with the div that was just created
 //----------------
     
-//the below should create an span element within each placholder div from above
-//then I'll use innerHTML to stick the individual letters into each span
-//append the value of the span into the given placeholder div
+//create a function that will display the letters in the
+//playing area, but make them hidden at first
     displayedLetter = document.createElement("span");
     displayedLetter.className = "displayedLetter";
     displayedLetter.innerHTML = separatedPhrase[i];
     placeholderForLetter.appendChild(displayedLetter)
     displayedLetter.style.color = "black";
     // console.log(displayedLetter)
+//^the below should create an span element within each placholder div from above
+//then I'll use innerHTML to stick the individual letters into each span
+//append the value of the span into the given placeholder div
 }
-
+//OTHER ISSUES THAT NEED SETTLING
 //on clicking a letter, if it matches, turn off that letter's "display: none"
+//i just noticed that i can get the same two random phrases in a row... find a way to disable that

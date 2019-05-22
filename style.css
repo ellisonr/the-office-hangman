@@ -48,7 +48,9 @@ h2{
 .displayedLetter{
     color: black;
     font-family: 'Zilla Slab', serif;
-    display: none;
+    /* display: none; */
+    text-decoration-line: underline;
+    font-size: 30px;
 }
 
 /* keyboard elements */
