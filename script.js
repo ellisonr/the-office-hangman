@@ -34,11 +34,11 @@ for (var i=0; i<separatedPhrase.length; i++){
     
 //create a function that will display the letters in the
 //playing area, but make them hidden at first
-    displayedLetter = document.createElement("span");
+    displayedLetter = document.createElement("div");
     displayedLetter.className = "displayedLetter";
     displayedLetter.innerHTML = separatedPhrase[i];
     placeholderForLetter.appendChild(displayedLetter)
-    displayedLetter.style.color = "black";
+    // displayedLetter.style.color = "black";
     // console.log(displayedLetter)
 //^the below should create an span element within each placholder div from above
 //then I'll use innerHTML to stick the individual letters into each span
@@ -53,11 +53,12 @@ for(let j=0; j<keyButtons.length; j++){
         if(separatedPhrase.includes(e.target.innerHTML)){
             e.target.style.opacity = 0.4;    
         }
-        console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`)
+        // console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`) <--testing to see if i'm targeting the buttons correctly
+        else{
+            console.log("that's incorrect!") //this happens if an incorrect letter is picked
+        }
     })
 }
-//^testing to see if i'm targeting the buttons correctly
-
 
 //OTHER ISSUES THAT NEED SETTLING
 //on clicking a letter, if it matches, turn off that letter's "display: none"
