@@ -25,7 +25,7 @@ for (var i=0; i<separatedPhrase.length; i++){
     let placeholderForLetter = document.createElement("div");
     placeholderForLetter.className = "spaceForLetter";
     document.querySelector(".blank-tiles").appendChild(placeholderForLetter);
-    placeholderForLetter.style.backgroundColor = "rgb(0,193,239)"; 
+    //placeholderForLetter.style.backgroundColor = "rgb(0,193,239)"; 
     //^applying color to test its covered area
 //^for every character in the random phrase, create a div element. this div element
 //will have a className of "spaceForletter". target the div with class "blank-tiles"
@@ -44,6 +44,17 @@ for (var i=0; i<separatedPhrase.length; i++){
 //then I'll use innerHTML to stick the individual letters into each span
 //append the value of the span into the given placeholder div
 }
+
+//first pass at button event listener
+const keyButtons = document.querySelectorAll(".letter")
+for(let j=0; j<keyButtons.length; j++){
+    keyButtons[j].addEventListener("click",function(e){
+        e.preventDefault();
+        console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`)
+    })
+}
+//^testing to see if i'm targeting things correctly
+
 //OTHER ISSUES THAT NEED SETTLING
 //on clicking a letter, if it matches, turn off that letter's "display: none"
 //i just noticed that i can get the same two random phrases in a row... find a way to disable that
