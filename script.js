@@ -47,8 +47,15 @@ console.log(separatedPhrase)
 //create a function that will display the letters in the
 //playing area, but make them hidden at first
 
-
-//for loop that puts the individual letters of the phrase
-//into an array; then if the clicked letter matches a letter
-//in the array, make that letter appear in the playing area
-
+//----------------
+//for loop that creates a space in the "playing area" for
+//each letter in the separatedPhrase
+for (var i=0; i<separatedPhrase.length; i++){
+    let placeholderForLetter = document.createElement("div")
+    placeholderForLetter.className = "spaceForLetter";
+    document.querySelector(".blank-tiles").appendChild(placeholderForLetter)
+}
+// ^for every character in the random phrase, create a div element. this div element
+// will have a className of "spaceForletter". target the div with class "blank-tiles"
+// and append that with the div that was just created
+//----------------
