@@ -58,7 +58,7 @@ for(let j=0; j<keyButtons.length; j++){
         else{
             e.target.style.opacity = 0.4
             e.target.style.border = "3px solid red";
-            console.log("that's incorrect!") //this happens if an incorrect letter is picked
+        // console.log("that's incorrect!") //testing for when an incorrect letter is picked
         }
     })
 }

@@ -3,7 +3,8 @@ body{
     /* ^https://wall.alphacoders.com/big.php?i=420126*/
     background-size: cover;
     margin: 0;
-    background-position-y: 150px;
+    background-position-y: 200px;
+    background-position-x: 100px;
 }
 
 /* banner elements */
@@ -41,14 +42,15 @@ h2{
 .blank-tiles{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .displayedLetter{
     color: black;
     font-family: 'Zilla Slab', serif;
     /* visibility: hidden; */
-    font-size: 40px;
-    line-height: 120px;
+    font-size: 55px;
+    line-height: 70px;
     margin: 10px;
 }
 
@@ -73,6 +75,12 @@ h2{
     font-weight: bolder;
     color: rgb(240,240,240);
     font-family: 'Zilla Slab', serif;
+/* below is from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate2 */
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .keyboard-area{
@@ -87,10 +95,10 @@ h2{
     margin: 8px;
 }
 
+/* below is from https://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome */
 button:focus{
     outline: 0;
 }
-/* from https://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome */
 
 /* images for each letter below */
 .a-pic{background-image: url(images/a-andybernard.jpg)}
