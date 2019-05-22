@@ -50,10 +50,14 @@ const keyButtons = document.querySelectorAll(".letter")
 for(let j=0; j<keyButtons.length; j++){
     keyButtons[j].addEventListener("click",function(e){
         e.preventDefault();
+        if(separatedPhrase.includes(e.target.innerHTML)){
+            e.target.style.opacity = 0.4;    
+        }
         console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`)
     })
 }
-//^testing to see if i'm targeting things correctly
+//^testing to see if i'm targeting the buttons correctly
+
 
 //OTHER ISSUES THAT NEED SETTLING
 //on clicking a letter, if it matches, turn off that letter's "display: none"

@@ -82,6 +82,11 @@ h2{
     margin: 8px;
 }
 
+button:focus{
+    outline: 0;
+}
+/* from https://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome */
+
 /* images for each letter below */
 .a-pic{background-image: url(images/a-andybernard.jpg)}
 .b-pic{background-image: url(images/b-creedbratton.jpeg)}
