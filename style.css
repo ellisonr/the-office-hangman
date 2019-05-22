@@ -48,7 +48,7 @@ h2{
 /* keyboard elements */
 .letter{
     padding: 5px 5px;
-    border: 2px solid black;
+    border: 3px solid rgb(0,193,239);
     text-transform: uppercase;
     width: 90px;
     height: 90px;
@@ -57,19 +57,20 @@ h2{
     border-radius: 7px;
     line-height: 90px;
     font-size: 35px;
-    font-weight: bold;
+    font-weight: bolder;
     color: rgb(240,240,240);
+    font-family: 'Zilla Slab', serif;
 }
 
 .keyboard-area{
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    display: grid;
 }
 
 .first-row, .second-row, .third-row {
-    display: inline-block;
-    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 8px;
 }
 

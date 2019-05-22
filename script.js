@@ -24,7 +24,8 @@ var phraseKey = [
     "dinkin flicka",
     "here comes treble",
     "princess unicorn",
-    "vance refrigeration"
+    "vance refrigeration",
+    "you know i have soft teeth"
 ];
 //console.log(phraseKey)
 
