@@ -1,7 +1,7 @@
 //array of random phrases, episode names, quotes from The Office
-var phraseKey = ["conference room, five minutes","that's what she said","pretzel day","i declare bankruptcy","bears beets battlestar galactica","did i stutter","diversity day",
+var phraseKey = ["conference room","that's what she said","pretzel day","i declare bankruptcy","bears eat beets","battlestar galactica","did i stutter","diversity day",
     "the dundies","save bandit","keep it simple stupid","it is your birthday","party planning committee","the finer things club","flonkerton","threat level midnight","goodbye toby",
-    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","michael scott paper company","dinkin flicka","here comes treble","princess unicorn","vance refrigeration","you know i have soft teeth"
+    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","michael scott paper company","dinkin flicka","princess unicorn","vance refrigeration","dinner party"
 ];
 //console.log(phraseKey)
 
@@ -51,10 +51,13 @@ for(let j=0; j<keyButtons.length; j++){
     keyButtons[j].addEventListener("click",function(e){
         e.preventDefault();
         if(separatedPhrase.includes(e.target.innerHTML)){
-            e.target.style.opacity = 0.4;    
+            // e.target.style.opacity = 0.4;
+            e.target.style.border = "3px solid green";
         }
         // console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`) <--testing to see if i'm targeting the buttons correctly
         else{
+            e.target.style.opacity = 0.4
+            e.target.style.border = "3px solid red";
             console.log("that's incorrect!") //this happens if an incorrect letter is picked
         }
     })
