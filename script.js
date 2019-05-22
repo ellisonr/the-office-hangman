@@ -1,3 +1,4 @@
+//array of random phrases, episode names, quotes from The Office
 var phraseKey = [
     "conference room, five minutes",
     "that's what she said",
@@ -26,4 +27,11 @@ var phraseKey = [
     "vance refrigeration"
 ];
 
-console.log(phraseKey)
+//function for returning a random item from the array above
+function randomPhrase(){
+    var a = Math.floor((Math.random()*phraseKey.length)); //from https://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
+    phraseInPlay = phraseKey[a];
+    return phraseInPlay;
+}
+randomPhrase()
+console.log(phraseInPlay)
