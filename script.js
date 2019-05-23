@@ -1,6 +1,6 @@
-var phraseKey = ["conference room","pretzel day","i declare bankruptcy","bears eat beets","battlestar galactica","did i stutter","diversity day","sabre",
-    "the dundies","save bandit","keep it simple stupid","it is your birthday","party planning committee","finer things club","flonkerton","threat level midnight","goodbye toby",
-    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","rundown","dinkin flicka","princess unicorn","vance refrigeration","dinner party"
+var phraseKey = ["scranton","pretzel day","bears eat beets","battlestar galactica","did i stutter","diversity day","sabre","dundies","schrute farm",
+    "save bandit","it is your birthday","party planning committee","finer things club","flonkerton","threat level midnight","goodbye toby",
+    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","rundown","dinkin flicka","princess unicorn","dinner party"
 ];
 
 function randomPhrase(){
@@ -18,14 +18,14 @@ for (var i=0; i<separatedPhrase.length; i++){
     document.querySelector(".blank-tiles").appendChild(placeholderForLetter);
     //function that displays the letters in the playing area, but make them hidden at first
     displayedLetter = document.createElement("div");
-    displayedLetter.className = "displayedLetter";
+    displayedLetter.className = "displayedLetter hidden";
     displayedLetter.innerHTML = separatedPhrase[i];
-    displayedLetter.style.visibility = "hidden";
+    // displayedLetter.style.visibility = "hidden";
     placeholderForLetter.appendChild(displayedLetter);
 }
 //^creates a div element within each placeholder div from above, then innerHTML sticks the individual letters into each div; append the value of the div into the given placeholder div
 
-const keyButtons = document.querySelectorAll(".letter")
+const keyButtons = document.querySelectorAll(".letter") //targets the buttons
 for(let j=0; j<keyButtons.length; j++){
     keyButtons[j].addEventListener("click",function(e){
         e.preventDefault();
@@ -35,9 +35,21 @@ for(let j=0; j<keyButtons.length; j++){
         if(separatedPhrase.includes(e.target.innerHTML)){
             e.target.style.opacity = 0.4;
             e.target.style.border = "3px solid green";
-            if(e.target.innerHTML.includes(displayedLetter.innerHTML)){
-                displayedLetter.style.visibility = "visible";
+            if(separatedPhrase.includes(displayedLetter.innerHTML)){
+                displayedLetter.classList.remove("hidden");
             }
+            // let show = e.target;
+            // return show;
+            // function removeClass(){
+            //     var show = getElementByClassName("hidden");
+            //     show.classList.remove("hidden");
+            // }
+            // removeClass()
+            // 
+            // 
+            // if(e.target.innerHTML.includes(displayedLetter.innerHTML)){
+            //     displayedLetter.style.visibility = "visible";
+            // }
         }
         // console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`) <--testing to see if i'm targeting the buttons correctly
         else{
@@ -46,6 +58,13 @@ for(let j=0; j<keyButtons.length; j++){
         }
     })
 }
+
+// function removeClass(){
+//     if(separatedPhrase.includes(displayedLetter.innerHTML)){
+//         displayedLetter.classList.remove("hidden");
+//     }
+// }
+// removeClass()
 
 //OTHER ISSUES THAT NEED SETTLING
 //on clicking a letter, if it matches, turn off that letter's "display: none"

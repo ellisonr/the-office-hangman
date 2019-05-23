@@ -68,6 +68,10 @@ input{
     margin: 10px;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 /* keyboard elements */
 .letter{
     padding: 5px 5px;
