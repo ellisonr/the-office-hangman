@@ -37,7 +37,8 @@ for (var i=0; i<separatedPhrase.length; i++){
     displayedLetter = document.createElement("div");
     displayedLetter.className = "displayedLetter";
     displayedLetter.innerHTML = separatedPhrase[i];
-    placeholderForLetter.appendChild(displayedLetter)
+    displayedLetter.style.visibility = "hidden";
+    placeholderForLetter.appendChild(displayedLetter);
     // displayedLetter.style.color = "black";
     // console.log(displayedLetter)
 //^the below should create an span element within each placholder div from above
@@ -45,14 +46,16 @@ for (var i=0; i<separatedPhrase.length; i++){
 //append the value of the span into the given placeholder div
 }
 
-//first pass at button event listener
 const keyButtons = document.querySelectorAll(".letter")
 for(let j=0; j<keyButtons.length; j++){
     keyButtons[j].addEventListener("click",function(e){
         e.preventDefault();
         if(separatedPhrase.includes(e.target.innerHTML)){
-            // e.target.style.opacity = 0.4;
+            e.target.style.opacity = 0.4;
             e.target.style.border = "3px solid green";
+            if(e.target.innerHTML.includes(displayedLetter.innerHTML)){
+                displayedLetter.style.visibility = "visible";
+            }
         }
         // console.log("you clicked!"+" "+`${keyButtons[j].innerHTML}`) <--testing to see if i'm targeting the buttons correctly
         else{
