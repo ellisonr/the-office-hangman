@@ -1,6 +1,11 @@
 var phraseKey = ["scranton","pretzel day","bears eat beets","battlestar galactica","did i stutter","diversity day","sabre","dundies","schrute farm","muckduck",
     "save bandit","it is your birthday","party planning committee","finer things club","flonkerton","threat level midnight","goodbye toby","james trickington",
-    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","rundown","dinkin flicka","princess unicorn","dinner party","frolf","voodoo mama juju"
+    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","rundown","dinkin flicka","princess unicorn","dinner party","frolf","voodoo mama juju",
+    "jim halpert","pam beesly","dwight schrute","todd packer","the temp","ryan howard","creed bratton","meredith palmer","michael scott","stanley hudson",
+    "phyllis vance","andy bernard","nard dog","erin hannon","plop","magic jordan","gabe lewis","kelly kapoor","the dementors","hirpees","holly flax","jan levinson",
+    "toby flenderson","kevin malone","oscar martinez","angela martin","karen filippelli","david wallace","date mike","prison mike","robert california","roy anderson",
+    "booze cruise","darryl philbin","charles miner","cousin mose","sprinkles","asap as possible","gift basket","alfredo's pizza","cafe disco"
+
 ];
 
 function randomPhrase(){

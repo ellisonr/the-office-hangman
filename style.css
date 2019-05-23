@@ -3,7 +3,7 @@ body{
     /* ^https://wall.alphacoders.com/big.php?i=420126*/
     background-size: cover;
     margin: 0;
-    background-position-y: 210px;
+    background-position-y: 70px;
     background-position-x: 100px;
 }
 
@@ -35,38 +35,40 @@ h2{
 }
 
 input{
-    color: rgb(0,193,239);
+    color: rgb(5,4,194);
     font-size: 20px;
     font-family: 'Zilla Slab', serif;
     padding-left: 10px;
-    margin-left: 55px;
+    margin-left: 40px;
     margin-top: 10px;
     font-size: 20px;
+    border-radius: 8px;
 }
 
 .playing-area{
     height: 200px;
+    padding-left: 10px
 }
 
 .blank-tiles{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     padding-top: 40px;
 }
 
 .spaceForLetter{
-    border-bottom: 4px solid rgb(0,193,239);
-    margin-left: 8px;
-    margin-right: 8px;
+    border-bottom: 4px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .displayedLetter{
-    color: rgb(5,4,194);
+    color: rgb(0,193,239);
     font-family: 'Zilla Slab', serif;
     font-size: 45px;
     line-height: 30px;
-    margin: 10px;
+    margin: 5px;
     font-weight: bolder;
 }
 
@@ -98,11 +100,10 @@ input{
 }
 
 .keyboard-area{
-    margin-bottom: 10px;
     display: grid;
 }
 
-.first-row, .second-row, .third-row {
+.first-row, .second-row{
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
