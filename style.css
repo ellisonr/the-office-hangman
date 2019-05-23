@@ -3,7 +3,7 @@ body{
     /* ^https://wall.alphacoders.com/big.php?i=420126*/
     background-size: cover;
     margin: 0;
-    background-position-y: 200px;
+    background-position-y: 210px;
     background-position-x: 100px;
 }
 
@@ -16,7 +16,7 @@ h1, h2{
 }
 h1{
     margin: 0;
-    font-size: 120px;
+    font-size: 130px;
     letter-spacing: 1.7px;
 }
 h2{
@@ -34,6 +34,16 @@ h2{
     padding-left: 10px;
 }
 
+input{
+    color: rgb(0,193,239);
+    font-size: 20px;
+    font-family: 'Zilla Slab', serif;
+    padding-left: 10px;
+    margin-left: 55px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 .playing-area{
     height: 200px;
 }
@@ -44,18 +54,18 @@ h2{
     justify-content: center;
 }
 
+.spaceForLetter{
+    border-bottom: 4px solid rgb(5,4,94);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 .displayedLetter{
     color: black;
     font-family: 'Zilla Slab', serif;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 70px;
     margin: 10px;
-}
-
-.spaceForLetter{
-    border-bottom: 7px solid black;
-    margin-left: 8px;
-    margin-right: 8px;
 }
 
 /* keyboard elements */
@@ -73,7 +83,7 @@ h2{
     font-weight: bolder;
     color: rgb(240,240,240);
     font-family: 'Zilla Slab', serif;
-/* below is from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate2 */
+    /* below is from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate2 */
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
