@@ -11,12 +11,14 @@
   <body>
     <h1>the office</h1>
     <h2>hangman game</h2>
+
     <div class="guesses-left">Guesses remaining: <span class="count">6</span></div>
-    <input type="button" value="Try Again?" onClick="location.href=location.href"> 
-    <!--^from https://stackoverflow.com/questions/29884654/button-that-refresh-page-on-click/29884677 -->
+    <input type="button" value="Try Again?" onClick="location.href=location.href">
+
     <div class="playing-area">
         <div class="blank-tiles"></div>
     </div>
+
     <div class="keyboard-area">
         <div class="first-row">
             <button class="letter a-pic">a</button>
@@ -28,19 +30,17 @@
             <button class="letter g-pic">g</button>
             <button class="letter h-pic">h</button>
             <button class="letter i-pic">i</button>
-        </div>
-        <div class="second-row">
             <button class="letter j-pic">j</button>
             <button class="letter k-pic">k</button>
             <button class="letter l-pic">l</button>
             <button class="letter m-pic">m</button>
+        </div>
+        <div class="second-row">
             <button class="letter n-pic">n</button>
             <button class="letter o-pic">o</button>
             <button class="letter p-pic">p</button>
             <button class="letter q-pic">q</button>
             <button class="letter r-pic">r</button>
-        </div>
-        <div class="third-row">
             <button class="letter s-pic">s</button>
             <button class="letter t-pic">t</button>
             <button class="letter u-pic">u</button>
@@ -51,6 +51,8 @@
             <button class="letter z-pic">z</button>
         </div>
     </div>
+
     <script src="./script.js"></script>
   </body>
+  <!--^refresh button is from https://stackoverflow.com/questions/29884654/button-that-refresh-page-on-click/29884677 -->
 </html>

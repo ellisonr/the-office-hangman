@@ -52,20 +52,22 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 40px;
 }
 
 .spaceForLetter{
-    border-bottom: 4px solid rgb(5,4,94);
+    border-bottom: 4px solid rgb(0,193,239);
     margin-left: 8px;
     margin-right: 8px;
 }
 
 .displayedLetter{
-    color: black;
+    color: rgb(5,4,194);
     font-family: 'Zilla Slab', serif;
     font-size: 45px;
-    line-height: 70px;
+    line-height: 30px;
     margin: 10px;
+    font-weight: bolder;
 }
 
 .hidden{

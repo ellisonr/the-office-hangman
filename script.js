@@ -1,6 +1,6 @@
-var phraseKey = ["scranton","pretzel day","bears eat beets","battlestar galactica","did i stutter","diversity day","sabre","dundies","schrute farm",
-    "save bandit","it is your birthday","party planning committee","finer things club","flonkerton","threat level midnight","goodbye toby",
-    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","rundown","dinkin flicka","princess unicorn","dinner party"
+var phraseKey = ["scranton","pretzel day","bears eat beets","battlestar galactica","did i stutter","diversity day","sabre","dundies","schrute farm","muckduck",
+    "save bandit","it is your birthday","party planning committee","finer things club","flonkerton","threat level midnight","goodbye toby","james trickington",
+    "lanch party","ryan started the fire","oaky afterbirth","scott's tots","rundown","dinkin flicka","princess unicorn","dinner party","frolf","voodoo mama juju"
 ];
 
 function randomPhrase(){
@@ -18,7 +18,7 @@ for (var i=0; i<separatedPhrase.length; i++){
     document.querySelector(".blank-tiles").appendChild(placeholderForLetter);
     //function that displays the letters in the playing area, but make them hidden at first
     displayedLetter = document.createElement("div");
-    displayedLetter.className = "displayedLetter hidden";
+    displayedLetter.className = "displayedLetter";
     displayedLetter.innerHTML = separatedPhrase[i];
     // displayedLetter.style.visibility = "hidden";
     placeholderForLetter.appendChild(displayedLetter);
@@ -37,6 +37,7 @@ for(let j=0; j<keyButtons.length; j++){
             e.target.style.border = "3px solid green";
             if(separatedPhrase.includes(displayedLetter.innerHTML)){
                 displayedLetter.classList.remove("hidden");
+                playingArea.style.visiblity="hidden";
             }
             // let show = e.target;
             // return show;
