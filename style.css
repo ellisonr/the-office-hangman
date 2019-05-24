@@ -3,7 +3,7 @@ body{
     /* ^https://wall.alphacoders.com/big.php?i=420126*/
     background-size: cover;
     margin: 0;
-    background-position-y: 70px;
+    background-position-y: 65px;
     background-position-x: 100px;
 }
 
@@ -16,13 +16,13 @@ h1, h2{
 }
 h1{
     margin: 0;
-    font-size: 130px;
+    font-size: 120px;
     letter-spacing: 1.7px;
 }
 h2{
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     padding-bottom: 10px;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 1.5px;
 }
 
@@ -67,12 +67,12 @@ input{
     color: rgb(0,193,239);
     font-family: 'Zilla Slab', serif;
     font-size: 45px;
-    line-height: 30px;
+    line-height: 40px;
     margin: 5px;
     font-weight: bolder;
 }
 
-.hidden{
+[data-value]{
     visibility: hidden;
 }
 
@@ -103,7 +103,7 @@ input{
     display: grid;
 }
 
-.first-row, .second-row{
+.first-row, .second-row, .third-row{
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
